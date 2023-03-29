@@ -17,4 +17,6 @@
     <string name="umur_invalid">Umur tidak boleh kosong.</string>
     <string name="result">"Kebutuhan Kalori Harian Anda Adalah: %1$.2f"</string>
     <string name="bmr_x">Kebutuhan Kalori Harian Anda Adalah: %1$.2f</string>
+    <string name="berat_badan">Berat Badan (Kg)</string>
+    <string name="tinggi_badan">Tinggi Badan (Cm)</string>
 </resources>

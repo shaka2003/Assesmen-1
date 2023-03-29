@@ -13,7 +13,7 @@ import org.d3if6706213098.asesmen1.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    val aktifitas = arrayOf("Sangat Jarang Olahraga", "Jarang Olahraga (1-2 kali seminggu)", "Olahraga Normal (2-3 kali seminggu)", "Sering Olahraga (4-5 kali seminggu)", "Sangat Sering Olahraga (2 kali sehari)")
+    val aktifitas = arrayOf("BMR","Sangat Jarang Olahraga", "Jarang Olahraga (1-2 kali seminggu)", "Olahraga Normal (2-3 kali seminggu)", "Sering Olahraga (4-5 kali seminggu)", "Sangat Sering Olahraga (2 kali sehari)")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,17 +29,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun hitungBMR() {
-        val umur = binding.umurEditText.text.toString()
+        val umur = binding.umurInp.text.toString()
         if (TextUtils.isEmpty(umur)) {
             Toast.makeText(this, R.string.umur_invalid, Toast.LENGTH_LONG).show()
             return
         }
-        val berat = binding.beratEditText.text.toString()
+        val berat = binding.beratBadanInp.text.toString()
         if (TextUtils.isEmpty(berat)) {
             Toast.makeText(this, R.string.berat_invalid, Toast.LENGTH_LONG).show()
             return
         }
-        val tinggi = binding.tinggiEditText.text.toString()
+        val tinggi = binding.tinggiBadanInp.text.toString()
         if (TextUtils.isEmpty(tinggi)) {
             Toast.makeText(this, R.string.tinggi_invalid, Toast.LENGTH_LONG).show()
             return
@@ -76,17 +76,19 @@ class MainActivity : AppCompatActivity() {
             tingkatAktifitas = 1.55F
         } else if (selectAktifitas.equals("Sering Olahraga (4-5 kali seminggu)")){
             tingkatAktifitas = 1.725F
-        } else {
+        } else if (selectAktifitas.equals("Sangat Sering Olahraga (2 kali sehari)")){
             tingkatAktifitas = 1.9F
+        } else {
+            tingkatAktifitas = 1F
         }
         return tingkatAktifitas
     }
 
     private fun reset(){
-        binding.umurEditText.text.clear()
-        binding.tinggiEditText.text.clear()
+        binding.umurInp.setText("")
+        binding.tinggiBadanInp.setText("")
         binding.radioGroup.clearCheck()
-        binding.beratEditText.text.clear()
+        binding.beratBadanInp.setText("")
         binding.result.text = ""
     }
 }
