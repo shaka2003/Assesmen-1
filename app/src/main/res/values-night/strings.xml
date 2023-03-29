@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="judul">Calorie Tracker</string>
+    <string name="umur">Umur</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="tinggi">Tinggi Badan</string>
+</resources>

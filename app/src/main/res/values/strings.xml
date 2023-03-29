@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">asesmen1</string>
+    <string name="judul">Calorie Tracker</string>
+    <string name="intro">Apa itu TDEE? TDEE atau Total Daily Energy Expenditure adalah rata-rata energi yang dibakar dalam satu hari.</string>
+    <string name="umur">Umur</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="tinggi">Tinggi Badan</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hitung">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="bb">Berat Badan</string>
+    <string name="aktifitas">Aktifitas</string>
+    <string name="berat_invalid">Berat tidak boleh kosong.</string>
+    <string name="tinggi_invalid">Tinggi tidak boleh kosong.</string>
+    <string name="gender_invalid">Pilih jenis kelamin.</string>
+    <string name="umur_invalid">Umur tidak boleh kosong.</string>
+    <string name="result">"Kebutuhan Kalori Harian Anda Adalah: %1$.2f"</string>
+    <string name="bmr_x">Kebutuhan Kalori Harian Anda Adalah: %1$.2f</string>
 </resources>
